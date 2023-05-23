@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Detalles del Producto</h2>
+  <div *ngIf="product" class="mt-4">
+    <p>ID: {{ product._id }}</p>
+    <p>Nombre: {{ product.name }}</p>
+    <p>Precio: {{ product.price }}</p>
+    <p>Categoria: {{ product.category }}</p>
+    <p>Estado: {{ product.state }}</p>
+    <p>Cantidad: {{ product.amount }}</p>
+    <p>Descripión: {{ product.description }}</p>
+
+  </div>
+  <div class="mt-4">
+    <button (click)="goBack()" class="btn btn-secondary m-2">Back</button>
+    </div>
+</div>
